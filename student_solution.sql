@@ -1,5 +1,5 @@
 CREATE TABLE Marksheet (
-    StudentID INT,
+    StudentID INT PRIMARY KEY,
     Name VARCHAR(50),
     Subject VARCHAR(50),
     Marks INT
