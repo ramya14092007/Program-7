@@ -1,8 +1,8 @@
 CREATE TABLE Marksheet (
-    StudentID INT,
-    Name VARCHAR(50),
-    Subject VARCHAR(50),
-    Marks INT
+    StudentID INT NOT NULL,
+    Name VARCHAR(50) NOT NULL,
+    Subject VARCHAR(50) NOT NULL,
+    Marks INT NOT NULL
 );
 
 INSERT INTO Marksheet (StudentID, Name, Subject, Marks)
@@ -19,4 +19,9 @@ WHERE Marks > 80;
 
 SELECT Name, Marks
 FROM Marksheet
+ORDER BY Marks DESC;
+
+SELECT StudentID, Name, Subject, Marks
+FROM Marksheet
+WHERE Marks > 80
 ORDER BY Marks DESC;
