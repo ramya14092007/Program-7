@@ -20,3 +20,8 @@ WHERE Marks > 80;
 SELECT Name, Marks
 FROM Marksheet
 ORDER BY Marks DESC;
+
+SELECT StudentID, Name, Subject, Marks
+FROM Marksheet
+WHERE Marks > 80
+ORDER BY Marks DESC;
